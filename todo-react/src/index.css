@@ -1,0 +1,11 @@
+:root {
+  --background-image: url('./background/bg-desktop-light.jpg');
+  --background-color: white;
+  --color: hsl(235, 19%, 35%);
+  font-family: "Todo-font";
+}
+[data-theme='dark'] {
+  --background-image: url('./background/bg-desktop-dark.jpg');
+  --background-color: #4d5066;
+  --color: hsl(0, 0%, 98%);
+}

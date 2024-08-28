@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Todo-font";
+  src: local("JosefinSans"), url("./font/Josefin_Sans/JosefinSans-VariableFont_wght.ttf") format("truetype");
+}
+.app {
+  background-image: var(--background-image);
+  background-position: center;
+  transition: all .5s;
+}
+.row{
+  margin: auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  transition: all .5s;
+}
+
+.btn, .btn-primary{
+  background-color: var(--background-color) !important;
+  color: var(--color);
+  border: none;
+}
+
+.form-control{
+  background-color: var(--background-color);
+  border: none;
+  font-family: "Todo-font";
+  line-height: 3;
+}
+.form-control:focus{
+  background-color: var(--background-color);
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: var(--color);
+}
+.form-control::placeholder{
+  color: var(--color);
+}
+
+.input{
+  padding-top: 5%;
+}
+
+.list{
+  padding-top: 2%;
+}
+
+div.form-check{
+  display: inline-block;
+}
+
+ul{
+  list-style-type: none;
+  font-family: "Todo-font";
+  margin: 0;
+  padding-left: 0;
+  padding-top: 20;
+}
+
+.item_col_content{
+  background-color: var(--background-color);
+  border: none;
+}
+
+.item_col_btn{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.item_row{
+  border-radius: var(--bs-border-radius);
+  border: 2px solid #cacde8 !important;
+}
+
+.item_check, .item_check:hover, .item_check:active, .item_check:checked{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  padding-top:41%;
+  padding-bottom: 41%;
+}
+
+.item_cross{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+  padding-top: 41%;
+  padding-bottom: 41%;
+}
+
+h4.mb-0{
+  color: var(--color);
+  padding-top: 2.5%;
+  padding-bottom: 2%;
+}
+
+h4.strikethrough{
+  text-decoration: line-through;
+}
+.todo-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  border-bottom-left-radius: var(--bs-border-radius);
+  border-bottom-right-radius: var(--bs-border-radius);
+  border: 2px solid #cacde8;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-family: "Todo-font";
+  font-size: medium;
+  color: var(--color);
+}
+
+.todo-footer span{
+  padding-left: 3%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
